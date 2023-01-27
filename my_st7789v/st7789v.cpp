@@ -213,7 +213,7 @@ void ST7789V::sleep_display(bool inout) {
     delay(120);
   } else {
     this->write_command_(ST7789_SLPOUT);  // Sleep out
-    delay(120);
+    delay(5);
   }
 }
 
