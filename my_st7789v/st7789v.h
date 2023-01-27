@@ -127,6 +127,8 @@ class ST7789V : public PollingComponent,
   void set_offset_height(uint32_t offset_height) { this->offset_height_ = offset_height; }
   void set_offset_width(uint16_t offset_width) { this->offset_width_ = offset_width; }
 
+  void sleep_display(bool inout);
+
   // ========== INTERNAL METHODS ==========
   // (In most use cases you won't need these)
   void setup() override;
