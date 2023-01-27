@@ -210,10 +210,10 @@ void ST7789V::write_display_data() {
 void ST7789V::sleep_display(bool inout) {
   if (inout) {
     this->write_command_(ST7789_SLPIN);  // Sleep in
-    delay(120);
+    delay(5);
   } else {
     this->write_command_(ST7789_SLPOUT);  // Sleep out
-    delay(5);
+    delay(120);
   }
 }
 
